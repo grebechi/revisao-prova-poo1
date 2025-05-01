@@ -1,3 +1,5 @@
+package dev.grebechi.util;
+
 
 public class StringUtils {
     
