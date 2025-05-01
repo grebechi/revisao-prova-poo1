@@ -1,5 +1,7 @@
 package dev.grebechi.model;
 
+import dev.grebechi.util.StringUtils;
+
 public class Pessoa {
     private String nome;
     private String sobrenome;
@@ -35,5 +37,7 @@ public class Pessoa {
         this.endereco = endereco;
     }
     
-    
+    public String getNomeCompleto(){
+        return StringUtils.capitalizarNome(nome) + " " + StringUtils.capitalizarNome(sobrenome);
+    }
 }
