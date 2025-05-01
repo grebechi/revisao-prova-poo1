@@ -7,10 +7,14 @@ public class Pessoa {
     private String sobrenome;
     private Endereco endereco;
 
-    public Pessoa(String nome, String sobrenome, Endereco endereco) {
+    public Pessoa(String nome, String sobrenome) {
         this.nome = nome;
         this.sobrenome = sobrenome;
-        this.endereco = endereco;
+    }
+
+    public Pessoa(String nome, String sobrenome, Endereco endereco) {
+        this(nome, sobrenome);
+        this.setEndereco(endereco);
     }
 
     public String getNome() {
