@@ -31,7 +31,11 @@ public class Funcionario extends Pessoa{
     }
 
     private void setSalario(double salario) {
+        if(salario < 0){
+            throw new IllegalArgumentException("O Salário não pode ser negativo.");
+        }
         this.salario = salario;
+        
     }
     
     
